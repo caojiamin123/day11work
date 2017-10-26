@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work22上下移动</title>
+	</head>
+	<body>
+		<ul id="box">
+			<li><a href="javascript:;">上移</a>111111<a href="javascript:;">下移</a></li>
+		    <li><a href="javascript:;">上移</a>222222<a href="javascript:;">下移</a></li>
+		    <li><a href="javascript:;">上移</a>333333<a href="javascript:;">下移</a></li>
+		    <li><a href="javascript:;">上移</a>444444<a href="javascript:;">下移</a></li>
+		    <li><a href="javascript:;">上移</a>555555<a href="javascript:;">下移</a></li>
+		    <li><a href="javascript:;">上移</a>666666<a href="javascript:;">下移</a></li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obox=document.getElementById("box");
+			var abtn=document.getElementsByTagName("a");
+			
+			for (var i=0;i<abtn.length;i++) {
+				abtn[i].onclick=function(){
+					alert("1");
+				}
+			}
+		}
+	</script>
+</html>

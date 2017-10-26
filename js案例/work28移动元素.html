@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work28移动元素</title>
+	    <style type="text/css">
+	    	ul,ol{
+	    		width: 100px;
+	    		height: 100px;
+	    		border: #000 1px solid;
+	    		float: left;
+	    		overflow: hidden;
+	    	}
+	    	input{
+	    		float: left;
+	    		margin: 100px 10px 0 10px;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<ul id="box1">
+		<li>123214323</li>
+	    <li>1232sasaddsa14323</li>
+	    <li>fresgergre</li>
+	    <li>bmhjkjl;jkq3</li>
+		</ul>
+		<input type="button" value="移动" id="btn"/>
+		<ol id="box2"></ol>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obox1=document.getElementById("box1");
+			var obox2=document.getElementById("box2");
+			var obtn=document.getElementById("btn");
+			
+			obtn.onclick=function(){
+				obox2.insertBefore(obox1.children[0],obox2.children[0]);
+			}
+		}
+	</script>
+</html>

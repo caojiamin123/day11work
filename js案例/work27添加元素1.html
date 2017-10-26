@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work27添加元素1</title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="添加" />
+		<div id="box">
+			<h2 id="h2">我是一个h2标签</h2>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obox=document.getElementById("box");
+			var obtn=document.getElementById("btn");
+			var oh2=document.getElementById("h2");
+			
+			obtn.onclick=function(){
+				var oh3=document.createElement('h3');
+				oh3.innerHTML='其实一个h3标签';
+				obox.insertBefore(oh3,oh2);
+			}
+		}
+	</script>
+</html>

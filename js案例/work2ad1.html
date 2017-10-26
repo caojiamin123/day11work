@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>work2ad1</title>
+		<style type="text/css">
+			#box{
+				width: 200px;
+				height: 200px;
+				background: red;
+				position: fixed;
+				_positon:absolute;
+				right: 0;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body style="height: 3000px;">
+		<div id="box">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		if(window.navigator.userAgent.indexOf('MSIE 6.0')!=-1){
+			window.onload=function(){
+				var obox=document.getElementById("box");
+				window.onscroll=function(){
+					var scrollT=document.documentElement.scrollTop;
+					var clientH=document.documentElement.clientHeight;
+					var oboxH=obox.offsetHeight;
+					obox.style.top=clientH-oboxH+scrollT+'px';
+				}
+			}
+		}
+	</script>
+</html>

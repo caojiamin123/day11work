@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work9打字机效果1</title>
+		<style type="text/css">
+			div{
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				color: #fff;
+				background: red;
+				float: left;
+				margin: 5px;
+				border-radius: 50%;		
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var str='的时候会出错，会认为括号没写完，的时候会出错，会认为括号没写完，的时候会出错，会认为括号没写完，解决方法是：';
+			var timer=null;
+			var inow=0;
+			timer=setInterval(function(){
+				inow++;
+				if(inow==str.length-1){
+					clearInterval(timer);
+				}
+				var odiv=document.createElement('div');
+				odiv.innerHTML=str.charAt(inow);
+				document.body.appendChild(odiv);
+			},30)
+			
+		}
+	</script>
+</html>

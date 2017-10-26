@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work7创建div1</title>
+		<style type="text/css">
+			#box{
+				width: 100px;
+				height: 100px;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obox=document.getElementById("box");			
+			var oh3=document.createElement('h3');
+			oh3.innerHTML='我是一个h3标签';
+			obox.appendChild(oh3);
+		}
+	</script>
+</html>
